@@ -21,7 +21,7 @@ The project is part of the NSF's **Designing Materials to Revolutionize and Engi
 This repository powers a static website and includes content and data related to:
 
 - Research Projects
-- People (Current & Past)
+- People (PIs & Students)
 - Publications
 - Data
 - Tools & Resources
