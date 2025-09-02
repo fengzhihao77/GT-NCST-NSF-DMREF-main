@@ -1,0 +1,206 @@
+/* ---------- Base ---------- */
+body {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+}
+
+.content {
+  min-height: 600px;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.05em;
+  font-weight: 300;
+  letter-spacing: .025em;
+}
+
+.page-title {
+  background-color: #A28D5B;  /* GT color, can adjust */
+  color: white;               /* text color */
+  text-align: center;         /* center the text */
+  padding: 40px 20px;         /* vertical and horizontal padding */
+  margin-bottom: 30px;        /* space below the title */
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 2.5rem;          /* adjust size as needed */
+  font-weight: 500;
+}
+
+
+/* ---------- Navbar ---------- */
+.index_banner {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+nav {
+  background: #ffffffed;
+  box-shadow: 1px 1px 3px #0000001a;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul a {
+  color: black;
+  font-weight: lighter;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Home Welcome Banner ---------- */
+.welcome-banner {
+  background-color: #A28D5B; /* GT color, can adjust */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 30px;
+}
+
+.welcome-banner h1 {
+  font-size: 3rem; /* bigger than default */
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ---------- Home Image + Text Row ---------- */
+.home-row {
+  display: flex;
+  align-items: flex-start; /* change from center to flex-start */
+  gap: 30px;
+  flex-wrap: wrap; /* ensures stacking on small screens */
+}
+
+.home-row img {
+  flex: 0 0 45%;       /* image takes 45% of row */
+  max-width: 45%;
+  border-radius: 10px;
+  order: 0;            /* ensures image is on the left */
+}
+
+.home-row .text {
+  flex: 1 1 50%;       /* text takes remaining space */
+  font-size: 1.1em;
+  line-height: 1.6;
+  order: 1;            /* ensures text is on the right */
+}
+
+/* ---------- Projects ---------- */
+.project-list li {
+  display: flex;
+  align-items: flex-start;  /* changed from center to flex-start */
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.project-list .image {
+  flex: 0 0 600px;              /* original width, we’ll adjust */
+  width: 600px;                 /* base width */
+  aspect-ratio: 2 / 1;          /* width : height = 1:2 */
+  margin-right: 20px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;  /* avoid tiling */
+  border-radius: 4px;
+}
+
+.project-list .meta h3 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+
+/* ---------- People ---------- */
+.people_list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.people_card {
+  display: flex;
+  align-items: flex-start; /* align top of text with headshot */
+  gap: 20px;               /* space between columns */
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.headshot img {
+  width: 200px;    /* adjust size as needed */
+  height: 200px;
+  object-fit: cover;        /* fills the box */
+  object-position: center 20%; /* shift image down */
+  border-radius: 50%;
+}
+
+.info {
+  flex: 1;          /* text takes remaining space */
+}
+
+
+.name_email .email {
+  font-size: 18px;
+  color: #062f4f;
+  margin: 0 0 10px 0;
+}
+
+.people-section h2 {
+  font-size: 28px;
+  margin: 30px 0 15px 20px;
+  border-bottom: 2px solid #ccc; /* optional underline */
+  padding-bottom: 5px;
+}
+
+.name_email h3 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+/* ---------- Publications ---------- */
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li.pub-card {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px -2px #ccc;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
